@@ -32,3 +32,12 @@ min_interval_sec=15
 " >> $filename
 done
 fi
+
+
+echo "[program:supla-virtual-device]
+command=/home/pi/supla-virtual-device/supla-virtual-device
+directory=/home/pi/supla-virtual-device
+autostart=true
+autorestart=true
+user=pi
+" | sudo tee "/etc/supervisor/conf.d/supla-virtual-device.conf"
