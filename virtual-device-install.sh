@@ -6,7 +6,7 @@ sudo apt-get install -y git libssl-dev build-essential curl
 cd /home/pi/
 git clone https://github.com/lukbek/supla-virtual-device.git
 cd supla-virtual-device
-sudo chmod +x install.sh 
+chmod +x install.sh 
 ./install.sh
 
 filename="supla-virtual-device.cfg"
@@ -29,7 +29,7 @@ if [ "$4" != "" ]; then
 for((x=0;x<$4;x++)); do
 echo "[CHANNEL_$x]
 function=TEMPERATURE_AND_HUMIDITY
-state_topic=~/mi-temp/sensor$x
+file=/home/pi/mi-temp/sensor$x
 min_interval_sec=15
 " >> $filename
 done
