@@ -1,7 +1,7 @@
 #!/bin/bash
 
 sudo apt install python3 bluez python3-pip -y
-sudo pip3 install bluepy -y
+sudo pip3 install bluepy
 
 mkdir -p ~/mi-temp
 cp ./save-to-file.sh ~/mi-temp
