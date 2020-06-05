@@ -5,6 +5,7 @@ sudo apt-get upgrade -y
 sudo apt-get install -y git libssl-dev build-essential curl
 cd /home/pi/
 git clone https://github.com/lukbek/supla-virtual-device.git
+cd supla-virtual-device
 sudo chmod +x install.sh 
 ./install.sh
 
