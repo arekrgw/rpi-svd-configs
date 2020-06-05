@@ -3,11 +3,12 @@
 sudo apt-get update -y
 sudo apt-get upgrade -y
 sudo apt-get install -y git libssl-dev build-essential curl
-git clone https://github.com/lukbek/supla-virtual-device.git ~/supla-virtual-device
-sudo chmod +x ~/supla-virtual-device/install.sh 
-~/supla-virtual-device/install.sh
+cd /home/pi/
+git clone https://github.com/lukbek/supla-virtual-device.git
+sudo chmod +x install.sh 
+./install.sh
 
-filename="~/supla-virtual-device/supla-virtual-device.cfg"
+filename="supla-virtual-device.cfg"
 echo "[GLOBAL]" > $filename
 echo "device_name=RPI CZUJNIKI TEMPERATURY" >> $filename
 echo "" >> $filename
